@@ -3,8 +3,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh "echo Hello 6"
-      }
+        script{
+          sh "echo Hello 6"
+          pullRequest.comment("Build isssss ${env.BUILD_ID}")
+        }
+       }
+      
     }
   }
 }

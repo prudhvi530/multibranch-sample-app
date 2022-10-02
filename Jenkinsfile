@@ -5,7 +5,7 @@ pipeline {
       steps {
         script{
           sh "echo Hello 6"
-          pullRequest.comment("Build ${env.BUILD_ID}")
+          pullRequest.comment("Build isssss ${env.BUILD_ID}")
         }
        }
       

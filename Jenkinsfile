@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh "echo Hello 6"
       }
+      pullRequest.comment("Build ${env.BUILD_ID}")
     }
   }
 }
